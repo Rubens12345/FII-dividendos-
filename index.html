@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dividend Track BR</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+    header { background-color: #1e1e2f; color: white; padding: 1rem; text-align: center; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; }
+    .container { padding: 2rem; }
+    .card-grid { display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
+    .card { background: white; padding: 1rem; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex: 1; min-width: 250px; text-align: center; }
+    table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden; }
+    th, td { padding: 0.8rem; text-align: center; border-bottom: 1px solid #ddd; }
+    th { background-color: #2e2e4d; color: white; }
+    footer { background-color: #1e1e2f; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+    .chart-placeholder { height: 250px; background: linear-gradient(135deg, #cccccc, #e0e0e0); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #555; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dividend Track BR</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Carteira</a>
+      <a href="#">Dividendos</a>
+      <a href="#">Sobre</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="card-grid">
+      <div class="card">
+        <h2>Total Investido</h2>
+        <p>R$ 5.000,00</p>
+      </div>
+      <div class="card">
+        <h2>Dividendos do Mês</h2>
+        <p>R$ 120,00</p>
+      </div>
+      <div class="card">
+        <h2>Rendimento Médio</h2>
+        <p>0,90% a.m.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Carteira de FIIs</h2>
+      <table>
+        <tr>
+          <th>Fundo</th>
+          <th>Ticker</th>
+          <th>Cotas</th>
+          <th>Investido</th>
+          <th>Dividendos</th>
+          <th>DY</th>
+        </tr>
+        <tr>
+          <td>FII Exemplo 1</td>
+          <td>EXMP11</td>
+          <td>10</td>
+          <td>R$ 1.200,00</td>
+          <td>R$ 10,00</td>
+          <td>0,83%</td>
+        </tr>
+        <tr>
+          <td>FII Exemplo 2</td>
+          <td>EXMP12</td>
+          <td>15</td>
+          <td>R$ 2.250,00</td>
+          <td>R$ 22,00</td>
+          <td>0,98%</td>
+        </tr>
+      </table>
+    </section>
+
+    <section style="margin-top: 2rem;">
+      <h2>Gráfico Simulado</h2>
+      <div class="chart-placeholder">Gráfico de Rendimento (estático)</div>
+    </section>
+  </div>
+
+  <footer>
+    Projeto open-source - MIT License
+  </footer>
+</body>
+</html>
